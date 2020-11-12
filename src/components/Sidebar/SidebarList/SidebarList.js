@@ -2,7 +2,7 @@ import React from 'react';
 import './SidebarList.scss';
 
 const SidebarList = () => (
-  <>
+  <div className="sidebar__list">
     <ul>
       <li>
         Home
@@ -14,7 +14,7 @@ const SidebarList = () => (
         About
       </li>
     </ul>
-  </>
+  </div>
 );
 
 export default SidebarList;
