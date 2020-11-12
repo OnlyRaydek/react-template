@@ -1,9 +1,77 @@
 .sidebar {
 
-  &__members {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 100px;
+    padding: 15.5px 2px 2px;
     background-color: #1d2531;
   }
 
-  &__image {}
+  &__members {
+    &::after {
+      content: "*";
+      position: relative;
+      color: red;
+      left: 30px;
+      font-size: 15px;
+    }
+  }
+
+  &__member {
+    margin: 13.5px 21px;
+    border-radius: 25px;
+
+    &::after {
+      content: "*";
+      position: relative;
+      color: red;
+      left: 30px;
+      font-size: 15px;
+    }
+
+    &:not(:nth-child(2)) {
+      filter: brightness(50%);
+    }
+  }
+
+  &__settings {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__grid {
+    width: 16px;
+    height: 16px;
+    padding: 20px 8px;
+    background: url('../../../images/settings/grid.svg') no-repeat center;
+    transition: transform 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__setting {
+    width: 16px;
+    height: 16px;
+    padding: 20px 8px;
+    background: url('../../../images/settings/settings.svg') no-repeat center;
+    transition: transform 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      transform: rotate(180deg);
+    }
+
+    &::after {
+      content: "*";
+      position: relative;
+      color: red;
+      right: 10px;
+      font-size: 15px;
+    }
+  }
 }
