@@ -1,0 +1,29 @@
+.sidebar {
+  &__search {
+    display: flex;
+  }
+
+  &__search-area {
+    padding-bottom: 15px;
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid #5b6779;
+    background-color: #222c3c;
+    
+    &::placeholder {
+      color: #5b6779;
+    }
+  }
+
+  &__search-icon {
+    width: 16px;
+    height: 16px;
+    background: url('../../../images/settings/search.svg') no-repeat center;
+    transition: transform 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      transform: rotate(180deg);
+    }
+  }
+}

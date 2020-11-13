@@ -1,6 +1,45 @@
 .sidebar {
 
   &__list {
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      width: 100%;
+      color: #5b6779;
+    }
+  }
+
+  &__list-topic {
+    padding-bottom: 14px;
+  }
+
+  &__list-item {
+    position: relative;
+    padding: 12px 0;
+    color: #fff;
+
+    &:first-child {
+      position: relative;
+      width: 115%;
+      right: 29px;
+      padding-left: 29px;
+      background-color: #313d4f;
+    }
+
+    &:nth-child(6)::after {
+      content: "54";
+      position: absolute;
+      width: 31px;
+      height: 23px;
+      border-radius: 12px;
+      text-align: center;
+      line-height: 22px;
+      color: #fff;
+      background-color: #2399f1;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }

@@ -6,12 +6,36 @@ import friendFive from '../../../images/friends/friend-5.png';
 import friendSix from '../../../images/friends/friend-6.png';
 
 const friendsList = [
-  friendOne,
-  friendTwo,
-  friendThree,
-  friendFour,
-  friendFive,
-  friendSix,
+  {
+    name: 'Caroline',
+    imgUrl: friendOne,
+    status: 'Typing...',
+  },
+  {
+    name: 'Claire',
+    imgUrl: friendTwo,
+    status: 'Designer',
+  },
+  {
+    name: 'Lina',
+    imgUrl: friendThree,
+    status: 'Sales Manager',
+  },
+  {
+    name: 'Jason',
+    imgUrl: friendFour,
+    status: 'CTO',
+  },
+  {
+    name: 'Dash',
+    imgUrl: friendFive,
+    status: 'Designer Lead',
+  },
+  {
+    name: 'Jessica',
+    imgUrl: friendSix,
+    status: 'Designer',
+  },
 ];
 
 export default friendsList;

@@ -1,0 +1,56 @@
+.sidebar {
+
+  &__friends {
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      
+    }
+
+    &-topic {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #5b6779;
+    }
+
+    & .sidebar__setting {
+      padding: 0;
+    }
+  }
+
+  &__friend {
+    position: relative;
+    display: flex;
+    margin-top: 17px;
+
+    &-info {
+      align-self: center;
+      margin-left: 11px;
+    }
+
+    &-name {
+      color: #fff;
+    }
+
+    &-status {
+      display: block;
+      margin-top: 5px;
+      color: #5b6779;
+    }
+
+    &:first-child::after {
+      content: "2";
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      border-radius: 12px;
+      text-align: center;
+      line-height: 22px;
+      color: #fff;
+      background-color: #2399f1;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

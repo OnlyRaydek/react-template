@@ -6,11 +6,12 @@ const SidebarMembers = () => (
   <div className="sidebar__main">
     <div className="sidebar__members">
       {membersList.map(img => (
-        <img
-          src={img}
-          alt=""
-          className="sidebar__member"
-        />
+        <div className="sidebar__member">
+          <img
+            src={img}
+            alt=""
+          />
+        </div>
       ))}
     </div>
     <div className="sidebar__settings">
