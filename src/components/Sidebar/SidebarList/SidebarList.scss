@@ -11,21 +11,11 @@
   }
 
   &__list-topic {
-    padding-bottom: 14px;
+    padding: 29px 29px 14px;
   }
 
   &__list-item {
     position: relative;
-    padding: 12px 0;
-    color: #fff;
-
-    &:first-child {
-      position: relative;
-      width: 115%;
-      right: 29px;
-      padding-left: 29px;
-      background-color: #313d4f;
-    }
 
     &:nth-child(6)::after {
       content: "54";
@@ -37,9 +27,23 @@
       line-height: 22px;
       color: #fff;
       background-color: #2399f1;
-      right: 0;
+      right: 29px;
       top: 50%;
       transform: translateY(-50%);
+    }
+  }
+
+  &__list-link {
+    padding: 12px 29px;
+    text-decoration: none;
+    color: #fff;
+    max-width: 100%;
+    cursor: pointer;
+    display: block;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #313d4f;
     }
   }
 }

@@ -1,0 +1,36 @@
+.main {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px 10px;
+    height: 56px;
+    background-color: #ffffff;
+  }
+
+  &__header-topic {
+    font-size: 24px;
+    color: #354052;
+  }
+
+  &__person-status {
+    display: flex;
+  }
+
+  &__person-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+  }
+
+  &__person-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2399f1;
+  }
+
+  &__person-position {
+    color: #b5b5b5;
+  }
+}

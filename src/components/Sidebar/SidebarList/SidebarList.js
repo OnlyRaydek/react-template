@@ -8,7 +8,15 @@ const SidebarList = () => (
     <h3 className="sidebar__list-topic">Menu</h3>
     <ul>
       {navigationList.map(item => (
-        <li className="sidebar__list-item">{item}</li>
+        <li className="sidebar__list-item">
+          <a
+            href="URL"
+            className="sidebar__list-link"
+            target="_blank"
+          >
+            {item}
+          </a>
+        </li>
       ))}
     </ul>
     <SidebarSearch />
