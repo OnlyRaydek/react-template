@@ -8,8 +8,8 @@ const MainStatistics = () => (
     classNames('main__statistics', 'statistics')
   }
   >
-    <div>
-      <img src={grafic} alt="" />
+    <div className="statistics__grafic">
+      <img src={grafic} alt="" className="statistics__image" />
     </div>
   </section>
 );

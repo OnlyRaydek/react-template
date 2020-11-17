@@ -2,11 +2,22 @@
 
   &__friends {
     padding: 29px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
     
     &-top {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
       
+      & >.sidebar__setting {
+        margin: 0;
+      }
     }
 
     &-topic {

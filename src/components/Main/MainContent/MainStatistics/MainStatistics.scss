@@ -1,0 +1,11 @@
+.statistics {
+  box-sizing: border-box;
+
+  &__grafic {
+    max-width: 770px;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+}
