@@ -26,6 +26,10 @@
         transform: scale(1.1);
       }
     }
+
+    @media screen and (max-width: 600px) {
+      justify-content: center;
+    }
   }
 
   &__data {

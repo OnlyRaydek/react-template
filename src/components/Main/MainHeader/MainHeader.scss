@@ -11,6 +11,10 @@
   &__header-topic {
     font-size: 24px;
     color: #354052;
+
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+    }
   }
 
   &__person-status {
@@ -33,9 +37,23 @@
     font-size: 16px;
     font-weight: bold;
     color: #2399f1;
+
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 
   &__person-position {
     color: #b5b5b5;
+
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &__person-photo {
+      display: none;
+    }
   }
 }

@@ -1,6 +1,10 @@
 .main {
   &__statistics-table {
     background-color: #fff;
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 
   &__table {
