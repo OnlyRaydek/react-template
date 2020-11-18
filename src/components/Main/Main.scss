@@ -7,4 +7,17 @@
   &::-webkit-scrollbar {
     width: 0;
   }
+
+  @media screen and (max-width: 800px) {
+
+    &__profile {
+      order: 1;
+      max-width: 300px;
+      margin: 0;
+    }
+
+    &__statistics {
+      order: 2;
+    }
+  }
 }

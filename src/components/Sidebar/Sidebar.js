@@ -2,7 +2,6 @@ import React from 'react';
 import classNames from 'classnames';
 import './Sidebar.scss';
 import SidebarMembers from './SidebarMembers/SidebarMembers';
-import SidebarMenu from './SidebarMenu/SidebarMenu';
 
 const Sidebar = () => (
   <section className={
@@ -10,7 +9,6 @@ const Sidebar = () => (
   }
   >
     <SidebarMembers />
-    <SidebarMenu />
   </section>
 );
 

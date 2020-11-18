@@ -11,8 +11,8 @@ const MainProfile = () => (
   >
     <div className="profile__top">
       <div className="profile__wrapper">
-        <div className="profile__picture">
-          <img src={profilePicture} alt="" />
+        <div>
+          <img className="profile__picture" src={profilePicture} alt="" />
         </div>
         <h3 className="profile__name">Jordan Jackson</h3>
         <p className="profile__status">Beta Tester | Ultimate User</p>
@@ -79,7 +79,33 @@ const MainProfile = () => (
     </div>
 
     <div className="profile__bottom">
-      <h4>Upcoming Events with Jordan</h4>
+      <h4 className="profile__bottom-topic">Upcoming Events with Jordan</h4>
+      <div className="profile__bottom-item">
+        <p>Super Photography 2016</p>
+        <p className={
+          classNames('profile__bottom-category',
+            'profile__bottom-category--dark-blue')
+        }
+        >
+          Photography
+        </p>
+      </div>
+      <date className="profile__bottom-date">
+        January 13th, Vienna - 6:30 PM
+      </date>
+      <div className="profile__bottom-item">
+        <p>Photo Expo</p>
+        <p className={
+          classNames('profile__bottom-category',
+            'profile__bottom-category--coral')
+        }
+        >
+          Design
+        </p>
+      </div>
+      <date className="profile__bottom-date">
+        March 28th, Paris - 7:30 PM
+      </date>
     </div>
   </section>
 );

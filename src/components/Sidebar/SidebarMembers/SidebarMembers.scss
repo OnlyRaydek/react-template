@@ -1,27 +1,14 @@
 .sidebar {
 
-  &__main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 100px;
-    padding: 15.5px 2px 2px;
-    background-color: #1d2531;
-  }
+  &__button {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    filter: brightness(50%);
 
-  &__member {
-    position: relative;
-    margin: 13.5px 21px;
-
-    & * {
-      border-radius: 25px;
-    }
-
-    &:not(:nth-child(2)) {
-      filter: brightness(50%);
-    }
-
-    &:nth-child(2)::before {
+    &:hover::before,
+    &:focus::before {
       content: "";
       position: absolute;
       width: 4px;
@@ -34,11 +21,50 @@
       top: 50%;
       transform: translate(50%, -50%);
     }
+
+    
+    &:hover,
+    &:focus {
+      filter: brightness(100%);
+    }
+
+    @media screen and (max-width: 480px) {
+      & > *{
+        width: 35px;
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100px;
+    padding: 16px 2px 2px;
+    background-color: #1d2531;
+  }
+
+  &__member {
+    position: relative;
+    margin: 13px 21px;
+
+    & * {
+      border-radius: 25px;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin: 6px 10px;
+    }
   }
 
   &__settings {
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__grid {
@@ -64,6 +90,13 @@
     &:hover {
       cursor: pointer;
       transform: rotate(180deg);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &__grid,
+    &__setting {
+      margin: 10px 4px;
     }
   }
 }

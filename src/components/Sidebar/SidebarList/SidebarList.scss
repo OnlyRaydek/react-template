@@ -20,15 +20,17 @@
     &:nth-child(6)::after {
       content: "54";
       position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 31px;
       height: 23px;
+      top: 50%;
+      right: 29px;
       border-radius: 12px;
-      text-align: center;
       line-height: 22px;
       color: #fff;
       background-color: #2399f1;
-      right: 29px;
-      top: 50%;
       transform: translateY(-50%);
     }
   }
