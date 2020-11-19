@@ -1,8 +1,11 @@
 import React from 'react';
 import './App.scss';
+import Sidebar from './components/Sidebar/Sidebar';
+import Main from './components/Main/Main';
 
 export const App = () => (
-  <div>
-    React starter pack
-  </div>
+  <>
+    <Sidebar />
+    <Main />
+  </>
 );

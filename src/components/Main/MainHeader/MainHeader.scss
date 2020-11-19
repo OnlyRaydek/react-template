@@ -1,0 +1,59 @@
+.main {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px 10px;
+    height: 56px;
+    background-color: #ffffff;
+  }
+
+  &__header-topic {
+    font-size: 24px;
+    color: #354052;
+
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+
+  &__person-status {
+    display: flex;
+  }
+
+  &__person-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 70px;
+
+    @media screen and (max-width: 480px) {
+      padding-right: 0;
+    }
+  }
+
+  &__person-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2399f1;
+
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+
+  &__person-position {
+    color: #b5b5b5;
+
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &__person-photo {
+      display: none;
+    }
+  }
+}

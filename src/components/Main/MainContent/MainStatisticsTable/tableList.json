@@ -1,0 +1,58 @@
+[
+  {
+    "referrer": "note.com",
+    "views": "54",
+    "sales": "12",
+    "conversion": "10.5%",
+    "total": "$50"
+  },
+  {
+    "referrer": "Direct, email, IM",
+    "views": "96",
+    "sales": "24",
+    "conversion": "25%",
+    "total": "$10"
+  },
+  {
+    "referrer": "Recommended",
+    "views": "5",
+    "sales": "5",
+    "conversion": "100%",
+    "total": "$10"
+  },
+  {
+    "referrer": "Dribble",
+    "views": "1",
+    "sales": "0",
+    "conversion": "0.0%",
+    "total": "$0"
+  },
+  {
+    "referrer": "google.co.uk",
+    "views": "5",
+    "sales": "0",
+    "conversion": "0.0%",
+    "total": "$0"
+  },
+  {
+    "referrer": "google.com.tr",
+    "views": "0",
+    "sales": "0",
+    "conversion": "0.0%",
+    "total": "$0"
+  },
+  {
+    "referrer": "mail.google.com",
+    "views": "1",
+    "sales": "0",
+    "conversion": "0.0%",
+    "total": "$0"
+  },
+  {
+    "referrer": "facebook.com",
+    "views": "5",
+    "sales": "0",
+    "conversion": "0.0%",
+    "total": "$0"
+  }
+]

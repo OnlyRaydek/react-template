@@ -1,0 +1,30 @@
+[
+  {
+    "data-number": "3,594",
+    "data-name": "New Orders",
+    "data-percent": "13%",
+    "data-state": "Increase",
+    "color": "#4695d9"
+  },
+  {
+    "data-number": "105,990",
+    "data-name": "Total Sales",
+    "data-percent": "4%",
+    "data-state": "Increase",
+    "color": "#21bb39"
+  },
+  {
+    "data-number": "50,890",
+    "data-name": "Total Paid Out",
+    "data-percent": "21%",
+    "data-state": "Decrease",
+    "color": "#f2a80a"
+  },
+  {
+    "data-number": "453",
+    "data-name": "New Customers",
+    "data-percent": "5%",
+    "data-state": "Decrease",
+    "color": "#fc565e"
+  }
+]

@@ -1,1 +1,10 @@
+.page {
+  display: flex;
+  background-color: #eff3f6;
 
+  &__sidebar {
+    display: flex;
+    background-color: #222c3c;
+  }
+  
+}

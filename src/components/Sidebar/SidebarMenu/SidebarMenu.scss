@@ -1,0 +1,12 @@
+.sidebar {
+  &__menu {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    @media screen and (max-width: 480px) {
+      max-width: 100%;
+    }
+  }
+}
